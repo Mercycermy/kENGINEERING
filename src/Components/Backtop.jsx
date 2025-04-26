@@ -28,7 +28,7 @@ function Backtop() {
      {showButton && (
     <button className='fixed bottom-4 right-4 '
     onClick={scrollToTop}>
-    <MdKeyboardDoubleArrowUp className='text-3xl text-blue-600 animate-bounce' />
+    <MdKeyboardDoubleArrowUp className='text-3xl text-[#008000] animate-bounce' />
         </button>
         )}
     </>
