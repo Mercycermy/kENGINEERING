@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Attendance from '../assets/Attendance.jpg';
+import Attendace2 from '../assets/attendance2.jpg';
+import Cctv from '../assets/cctv.jpg';
+import Cctv2 from '../assets/cctv2.jpg';
+import ElectricFence from '../assets/electricfence.jpg';
+import ElectricFence2 from '../assets/electricfence2.jpg';
+import FireAlarm from '../assets/firealarm.jpg';
+import FireAlarm2 from '../assets/firealarm2.jpg';
+import Inverter from '../assets/inverter.jpg';
+import Inverter2 from '../assets/inverter2.jpg';
+import PaSystem from '../assets/pasystem.jpg';
+import PaSystem2 from '../assets/pasystem2.jpg';
 
 function ServicesSection() {
   const services = [
     {
-      image: "/services/cctv.jpg",
-      image2: "/services/cctv-detail.jpg",
+      image: Cctv,
+      image2: Cctv2,
       title: "CCTV Surveillance Systems",
       hero: "Keep an eye on what matters—24/7.",
       description:
@@ -14,8 +26,8 @@ function ServicesSection() {
       ctaAction: "Call Now",
     },
     {
-      image: "/services/fire-alarm.jpg",
-      image2: "/services/fire-alarm-detail.jpg",
+      image: FireAlarm,
+      image2: FireAlarm2,
       title: "Fire Alarm Systems",
       hero: "Early warning saves lives.",
       description:
@@ -24,8 +36,8 @@ function ServicesSection() {
       ctaAction: "Schedule an Inspection",
     },
     {
-      image: "/services/attendance.jpg",
-      image2: "/services/attendance-detail.jpg",
+      image: Attendance,
+      image2: Attendace2,
       title: "Time Attendance Systems",
       hero: "Track time the smart way.",
       description:
@@ -34,8 +46,8 @@ function ServicesSection() {
       ctaAction: "Contact for a Demo",
     },
     {
-      image: "/services/electric-fence.jpg",
-      image2: "/services/electric-fence-detail.jpg",
+      image: ElectricFence,
+      image2: ElectricFence2,
       title: "Electric Fence & Alarm Systems",
       hero: "Strong perimeter. Stronger peace of mind.",
       description:
@@ -44,8 +56,8 @@ function ServicesSection() {
       ctaAction: "Request a Quote",
     },
     {
-      image: "/services/inverter.jpg",
-      image2: "/services/inverter-detail.jpg",
+      image: Inverter,
+      image2: Inverter2,
       title: "Inverter & Energy Backup Solutions",
       hero: "Power that never stops.",
       description:
@@ -54,8 +66,8 @@ function ServicesSection() {
       ctaAction: "Get a Power Plan",
     },
     {
-      image: "/services/pa-system.jpg",
-      image2: "/services/pa-system-detail.jpg",
+      image: PaSystem,
+      image2: PaSystem2,
       title: "Public Address (PA) Systems",
       hero: "Clear sound. Seamless communication.",
       description:
@@ -71,8 +83,8 @@ function ServicesSection() {
   return (
     <section id="services" className="py-20 container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mb-12 text-center">
-        <h2 className="text-4xl font-bold text-black mb-4">Our Services</h2>
-        <p className="text-blue-600 text-lg">Helping you stay secure, smart, and connected.</p>
+        <h2 className="text-4xl font-bold text-[#00A651] mb-4">Our Services</h2>
+        <p className="text-black text-lg">Helping you stay secure, smart, and connected.</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -91,7 +103,7 @@ function ServicesSection() {
             />
             <div className="p-6">
               <h3 className="text-2xl font-bold text-black mb-2">{service.title}</h3>
-              <p className="text-blue-600 italic">{service.hero}</p>
+              <p className="text-[#00A651] italic">{service.hero}</p>
             </div>
           </motion.div>
         ))}
@@ -120,12 +132,12 @@ function ServicesSection() {
               </div>
 
               <h3 className="text-3xl font-bold text-black mb-2">{selected.title}</h3>
-              <p className="text-blue-600 italic mb-4">{selected.hero}</p>
+              <p className="text-[#00A651] italic mb-4">{selected.hero}</p>
               <p className="text-black mb-4">{selected.description}</p>
-              <p className="text-blue-600 font-semibold mb-4">{selected.ctaText}</p>
+              <p className="text-[#00A651] font-semibold mb-4">{selected.ctaText}</p>
               <a
   href="tel:+251945662432"
-  className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
+  className="inline-block bg-[#00A651] text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
 >
    {selected.ctaAction}
 </a>

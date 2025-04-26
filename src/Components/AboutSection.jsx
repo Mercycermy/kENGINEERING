@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import AboutImage from "../assets/stats.webp" // You can rename this image if you want
+import AboutImage from "../assets/about.jpg";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -14,19 +14,9 @@ function AboutSection() {
       id="about"
     >
       <div className="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24">
-        {/* Image */}
-        <motion.div variants={fadeIn('right', 0.3)} className="w-full md:w-1/2">
-          <motion.img
-            variants={fadeIn('up', 0.4)}
-            src={AboutImage}
-            alt="About K-Engineering"
-            className="w-full h-auto rounded-lg"
-          />
-        </motion.div>
-
         {/* Text */}
         <motion.div variants={fadeIn('left', 0.3)} className="w-full md:w-1/2">
-          <motion.span variants={fadeIn('up', 0.4)} className="text-orange-500 font-semibold text-3xl">
+          <motion.span variants={fadeIn('up', 0.4)} className="text-[#00A651]  font-bold text-4xl">
             ABOUT US
           </motion.span>
           <motion.h2 variants={textVariant(0.5)} className="text-3xl md:text-4xl font-bold text-navy-900 mt-4 mb-6">
@@ -36,8 +26,9 @@ function AboutSection() {
             At K-Engineering, we deliver smart security and energy solutions for homes, businesses, and institutions across Ethiopia. From CCTV to inverter systems, we help you stay safe, powered, and in control.
           </motion.p>
           <motion.a
+           href="#services"
             variants={fadeIn('up', 0.7)}
-            className="text-blue-500 font-semibold flex items-center gap-2 hover:gap-4 transition-all"
+            className="text-[#00A651] font-semibold flex items-center gap-2 hover:gap-4 transition-all"
           >
             Learn more about our work
             <motion.svg
@@ -55,6 +46,16 @@ function AboutSection() {
               />
             </motion.svg>
           </motion.a>
+        </motion.div>
+
+        {/* Image - now side by side with the text */}
+        <motion.div variants={fadeIn('right', 0.3)} className="w-full md:w-1/2">
+          <motion.img
+            variants={fadeIn('up', 0.4)}
+            src={AboutImage}
+            alt="About K-Engineering"
+            className="w-full h-auto rounded-lg"
+          />
         </motion.div>
       </div>
     </motion.section>

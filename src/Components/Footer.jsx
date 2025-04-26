@@ -38,9 +38,8 @@ function Footer() {
               variants={fadeIn('down', 0.5)}
               className="flex items-center gap-1 mb-6"
             >
-              <div className="w-4 h-4 bg-blue-600 rounded-full opacity-75"></div>
-              <div className="w-4 h-4 bg-red-500 rounded-full -ml-2"></div>
-              <span className="text-xl font-medium ml-1">M.M</span>
+              
+              <span className="text-xl font-medium ml-1">K-Engineering</span>
             </motion.div>
             <motion.p
               variants={fadeIn('up', 0.6)}
@@ -122,13 +121,13 @@ function Footer() {
               variants={fadeIn('right', 1.0)}
               className="text-gray-600 text-sm"
             >
-              Copyright © {new Date().getFullYear()} M.M
+              Copyright © {new Date().getFullYear()} K-Engineering
             </motion.p>
             <motion.p
               variants={fadeIn('left', 1.0)}
               className="text-gray-600 text-sm"
             >
-              Created by M.M
+              Created by Mercy
             </motion.p>
           </motion.div>
         </motion.div>

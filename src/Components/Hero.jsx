@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { fadeIn, textVariant } from "../utils/motion.js";
+import HeroImage from "../assets/hero.jpg";
 
 function Hero() {
   return (
@@ -17,7 +18,7 @@ function Hero() {
           >
             K-ENGINEERING
             <br />
-            <span className="text-blue-600 relative inline-block">
+            <span className="text-[#00A651]  relative inline-block">
               Smart Security. Smarter Living.
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></span>
             </span>
@@ -38,7 +39,7 @@ function Hero() {
             whileInView="show"
             className="flex gap-3 max-w-md"
           >
-            <button className="bg-blue-600 text-white px-6 py-4 rounded-xl hover:bg-blue-700 cursor-pointer transition-all hover:shadow-lg hover:shadow-blue-100 active:scale-95">
+            <button className="bg-[#00A651]  text-white px-6 py-4 rounded-xl hover:bg-[#00C853] cursor-pointer transition-all hover:shadow-lg hover:shadow-blue-100 active:scale-95">
               <a href='#contact'> Contact Us →</a>
             </button>
           </motion.div>
@@ -53,7 +54,7 @@ function Hero() {
         >
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={HeroImage}
               alt="Team working on smart tech"
               className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"
             />

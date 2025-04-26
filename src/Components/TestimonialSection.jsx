@@ -49,7 +49,7 @@ function TestimonialSection() {
   return (
     <section id="testimonials" className="py-16 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#00A651]">
         What Our Satisfied Clients Are Saying
         </h2>
         <p className="text-gray-600">
@@ -102,7 +102,7 @@ function TestimonialSection() {
                     <span 
                       key={starIndex} 
                       
-                      className="text-blue-600"
+                      className="text-[#00C853]"
                     >
                       ★
                     </span>
@@ -133,14 +133,14 @@ function TestimonialSection() {
           <motion.button 
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="swiper-button-prev-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-blue-500 hover:text-white cursor-pointer transition-colors"
+            className="swiper-button-prev-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#00C853] hover:text-white cursor-pointer transition-colors"
           >
             <BsChevronLeft className="w-6 h-6" />
           </motion.button>
           <motion.button 
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="swiper-button-next-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-blue-500 hover:text-white cursor-pointer transition-colors"
+            className="swiper-button-next-custom w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#00C853] hover:text-white cursor-pointer transition-colors"
           >
             <BsChevronRight className="w-6 h-6" />
           </motion.button>
