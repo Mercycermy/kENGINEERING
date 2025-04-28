@@ -5,46 +5,33 @@ import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import Eliana from '../assets/eliana.jpg';
+import Samuel from '../assets/samuel.jpg';
+import Hanna from '../assets/hana.jpg';
 
 function TestimonialSection() {
   const testimonials = [
     {
       id: 1,
       name: "Eliana Mekonnen",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      image: Eliana,
       text: "The CCTV installation was fast, clean, and super professional. I feel so much safer at home now. Their techs really know their stuff!",
     },
     {
       id: 2,
       name: "Samuel Tesfaye",
-      image: "https://randomuser.me/api/portraits/men/77.jpg",
+      image: Samuel,
       text: "I got an inverter and battery backup set up through them. No more power outage headaches! They gave me options that matched my budget perfectly.",
     },
     {
       id: 3,
       name: "Hanna Getachew",
-      image: "https://randomuser.me/api/portraits/women/52.jpg",
+      image: Hanna,
       text: "We upgraded our school’s PA system with their help and the results are amazing. Crystal clear sound in every block. Totally worth it!",
     },
-    {
-      id: 4,
-      name: "Dereje Abebe",
-      image: "https://randomuser.me/api/portraits/men/12.jpg",
-      text: "I’ve worked with a lot of service providers, but their team is on another level. Courteous, punctual, and the system works flawlessly.",
-    },
-    {
-      id: 5,
-      name: "Lidya Tadesse",
-      image: "https://randomuser.me/api/portraits/women/36.jpg",
-      text: "From consultation to installation, it was smooth sailing. Their fire alarm system gave us the peace of mind we were looking for.",
-    },
-    {
-      id: 6,
-      name: "Nahom Alemu",
-      image: "https://randomuser.me/api/portraits/men/65.jpg",
-      text: "We installed biometric attendance for our small company. It streamlined everything. Now payroll is accurate and on time. Highly recommend!",
-    },
+    
   ];
+  
   
   return (
     <section id="testimonials" className="py-16 px-4 max-w-7xl mx-auto">
