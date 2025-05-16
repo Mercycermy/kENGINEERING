@@ -8,7 +8,7 @@ import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import AboutSection from './Components/AboutSection'
 import ServicesSection from './Components/ServicesSection'
-import TestimonialSection from './Components/TestimonialSection'
+import A4ImageSection from './Components/A4ImageSection'
 import Preloader from './Components/Preloader'
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
     <AboutSection/>
     <FeatureSection/>
     <ServicesSection/>
-    <TestimonialSection/>
+    <A4ImageSection/>
     <Contact/>
     
     <Footer/>
