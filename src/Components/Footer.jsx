@@ -3,22 +3,23 @@ import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaTiktok, FaTelegramPlane } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import { publicConfig } from '../config/publicConfig.js';
 
 function Footer() {
   const footerLinks = {
     gallery: [
-      { name: 'See Our Work', href: 'https://t.me/Kengineeringcctv' },
-      { name: 'Client Feedback', href: 'https://t.me/Kengineeringcctv' },
+      { name: 'See Our Work', href: publicConfig.socialLinks.galleryPrimary },
+      { name: 'Client Feedback', href: publicConfig.socialLinks.gallerySecondary },
     ],
     contact: [
-      { name: 'Email Us', href: 'mailto:Kengineers24@gmail.com' },
-      { name: 'Telegram', href: 'https://t.me/Kengineeringcctv' },
+      { name: 'Email Us', href: `mailto:${publicConfig.contactEmail}` },
+      { name: 'Telegram', href: publicConfig.socialLinks.telegram },
     ],
     social: [
-      { name: 'Facebook', href: 'https://www.facebook.com/Kengineeringcctv' },
-      { name: 'LinkedIn', href: 'https://www.linkedin.com/company/kengineers/' },
-      { name: 'TikTok', href: 'https://www.tiktok.com/@kengineers24?_t=ZM-8vTSIiC0Qrv&_r=1' },
-      { name: 'Telegram', href: 'https://t.me/Kengineeringcctv' },
+      { name: 'Facebook', href: publicConfig.socialLinks.facebook },
+      { name: 'LinkedIn', href: publicConfig.socialLinks.linkedin },
+      { name: 'TikTok', href: publicConfig.socialLinks.tiktok },
+      { name: 'Telegram', href: publicConfig.socialLinks.telegram },
     ],
   }
 
@@ -32,10 +33,10 @@ function Footer() {
           {/* Brand Column */}
           <motion.div variants={fadeIn('right', 0.4)} className="lg:col-span-4">
             <motion.div variants={fadeIn('down', 0.5)} className="flex items-center gap-1 mb-6">
-              <span className="text-xl font-medium ml-1">K-Engineering</span>
+              <span className="text-xl font-medium ml-1">{publicConfig.companyName}</span>
             </motion.div>
             <motion.p variants={fadeIn('up', 0.6)} className="text-gray-600 mb-6">
-              K-Engineering is a proudly Ethiopian company committed to modern security and energy solutions.
+              {publicConfig.companyDescription}
             </motion.p>
             <motion.div variants={fadeIn('up', 0.7)} className="flex gap-4">
               {footerLinks.social.map((link, index) => (
@@ -90,10 +91,10 @@ function Footer() {
         <motion.div variants={fadeIn('up', 0.8)} className="border-t border-gray-200 mt-12 pt-8">
           <motion.div variants={fadeIn('up', 0.9)} className="flex flex-col md:flex-row justify-between items-center gap-4">
             <motion.p variants={fadeIn('right', 1.0)} className="text-gray-600 text-sm">
-              Copyright © {new Date().getFullYear()} K-Engineering
+              Copyright © {new Date().getFullYear()} {publicConfig.companyName}
             </motion.p>
             <motion.p variants={fadeIn('left', 1.0)} className="text-gray-600 text-sm">
-              Created by <a href="https://github.com/mercycermy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">MercyCermy</a>
+              Built by <a href={publicConfig.attribution.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{publicConfig.attribution.label}</a>
             </motion.p>
           </motion.div>
         </motion.div>

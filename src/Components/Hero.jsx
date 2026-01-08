@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { fadeIn, textVariant } from "../utils/motion.js";
 import HeroImage from "../assets/hero.jpg";
+import { publicConfig } from '../config/publicConfig.js';
 
 function Hero() {
   return (
@@ -16,10 +17,10 @@ function Hero() {
             whileInView="show"
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
           >
-            K-ENGINEERING
+            {publicConfig.companyName}
             <br />
             <span className="text-[#00A651]  relative inline-block">
-              Smart Security. Smarter Living.
+              {publicConfig.companyTagline}
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-200/60"></span>
             </span>
           </motion.h1>
@@ -30,7 +31,7 @@ function Hero() {
             whileInView="show"
             className="text-gray-600 text-lg md:text-xl max-w-xl"
           >
-            Protect your property, empower your space, and experience peace of mind with our certified security and energy solutions.
+            {publicConfig.companyDescription}
           </motion.p>
 
           <motion.div

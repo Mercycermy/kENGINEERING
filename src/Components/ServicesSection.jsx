@@ -12,6 +12,7 @@ import Inverter from '../assets/inverter.jpg';
 import Inverter2 from '../assets/inverter2.jpg';
 import PaSystem from '../assets/pasystem.jpg';
 import PaSystem2 from '../assets/pasystem2.jpg';
+import { publicConfig } from '../config/publicConfig.js';
 
 function ServicesSection() {
   const services = [
@@ -134,7 +135,7 @@ function ServicesSection() {
         <p className="text-black mb-4">{selected.description}</p>
         <p className="text-[#00A651] font-semibold mb-4">{selected.ctaText}</p>
         <a
-          href="tel:+251945662432"
+          href={publicConfig.contactTelHref}
           className="inline-block bg-[#00A651] text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
         >
           {selected.ctaAction}

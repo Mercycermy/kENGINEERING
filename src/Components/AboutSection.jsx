@@ -3,6 +3,7 @@ import React from 'react'
 import AboutImage from "../assets/about.jpg";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import { publicConfig } from '../config/publicConfig.js';
 
 function AboutSection() {
   return (
@@ -23,7 +24,7 @@ function AboutSection() {
             Smart, Secure & Reliable.
           </motion.h2>
           <motion.p variants={fadeIn('up', 0.6)} className="text-gray-600 mb-8">
-            At K-Engineering, we deliver smart security and energy solutions for homes, businesses, and institutions across Ethiopia. From CCTV to inverter systems, we help you stay safe, powered, and in control.
+            {publicConfig.companyDescription}
           </motion.p>
           <motion.a
            href="#services"
@@ -53,7 +54,7 @@ function AboutSection() {
           <motion.img
             variants={fadeIn('up', 0.4)}
             src={AboutImage}
-            alt="About K-Engineering"
+            alt={`About ${publicConfig.companyName}`}
             className="w-full h-auto rounded-lg"
           />
         </motion.div>

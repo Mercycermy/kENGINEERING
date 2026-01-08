@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
+import { publicConfig } from '../config/publicConfig.js';
 
 function FeatureSection() {
   const features = [
@@ -33,7 +34,7 @@ function FeatureSection() {
     whileInView="show" className="max-w-7xl mx-auto px-4 py-16">
         <motion.div variants={fadeIn('up', 0.3)} className="text-center mb-12">
             <motion.h2 variants={textVariant(0.2)} className="text-3xl font-bold mb-4 text-[#00A651]">
-            Why Choose K-ENGINEERING?
+            Why Choose {publicConfig.companyName}?
             </motion.h2>
             <motion.p variants={fadeIn('up', 0.4)} className="text-gray-600">
             We're more than service providers—we're your trusted tech partners.
